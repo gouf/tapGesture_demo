@@ -24,8 +24,22 @@ UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     }
 
     @IBAction func tapAction(sender: UITapGestureRecognizer) {
-        print("Hello")
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .PhotoLibrary
+        imagePicker.allowsEditing = false
+        imagePicker.delegate = self
+
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
 
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imageView.image = selectedImage
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
