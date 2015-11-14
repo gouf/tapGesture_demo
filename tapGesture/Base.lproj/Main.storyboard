@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="czA-ny-WsB">
-                                <rect key="frame" x="99" y="83" width="325" height="325"/>
+                                <rect key="frame" x="99" y="83" width="560" height="560"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-gm-ebn">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="325"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-gm-ebn">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="560"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="N1X-gm-ebn" secondAttribute="height" multiplier="1:1" id="hdt-Pr-aFc"/>
@@ -38,7 +38,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="czA-ny-WsB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qd3-rE-Gn1"/>
+                            <constraint firstItem="czA-ny-WsB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="R2J-ft-92N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="czA-ny-WsB" secondAttribute="trailing" id="qHY-FT-aFG"/>
                         </constraints>
                     </view>
                     <connections>
