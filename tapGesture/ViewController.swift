@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIGestureRecognizerDelegate {
+class ViewController: UIViewController, UIGestureRecognizerDelegate,
+UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
